@@ -1,0 +1,81 @@
+{
+    "slider": [
+        "s1.jpg",
+        "s2.jpg",
+        "s3.jpg",
+        "s4.jpg",
+        "s5.jpg",
+        "s6.jpg",
+        "s7.jpg",
+        "s8.jpg",
+        "s9.jpg"
+    ],
+    "imglist": [
+        {
+            "selected_title": "TNF Black / Asphalt Gray",
+            "url": "1.jpg",
+            "color_circle_0": "#000",
+            "color_circle_1": "#5c5c5c"
+        },
+        {
+            "selected_title": "Midnight Petrol Blue / Seaweed Blue",
+            "url": "2.jpg",
+            "color_circle_0": "#1c3e4f",
+            "color_circle_1": "#5D828E"
+        },
+        {
+            "selected_title": "Summit Gold / TNF Black (NPF)",
+            "url": "3.jpg",
+            "color_circle_0": "#F4A020",
+            "color_circle_1": "#262627"
+        },
+        {
+            "selected_title": "Summit Gold / Leopard Print",
+            "url": "4.jpg",
+            "color_circle_0": "#F4A020",
+            "color_circle_1": "#272627"
+        },
+        {
+            "selected_title": "TNF Orange / TNF Black",
+            "url": "5.jpg",
+            "color_circle_0": "#F14F1B",
+            "color_circle_1": "#262527"
+        },
+        {
+            "selected_title": "Asphalt Gray / Retro Orange (NPF)",
+            "url": "6.jpg",
+            "color_circle_0": "#F15547",
+            "color_circle_1": "#3B3B3F"
+        },
+        {
+            "selected_title": "TNF Navy / Pewter Gray (NPF)",
+            "url": "7.jpg",
+            "color_circle_0": "#C9CCCB",
+            "color_circle_1": "#27293D"
+        },
+        {
+            "selected_title": "Violet Peak / TNF Black",
+            "url": "8.jpg",
+            "color_circle_0": "#571387",
+            "color_circle_1": "#000000"
+        },
+        {
+            "selected_title": "Deep Nori / Galactic Blue",
+            "url": "9.jpg",
+            "color_circle_0": "#29A7B3",
+            "color_circle_1": "#224847"
+        },
+        {
+            "selected_title": "Kaki Pierre / TNF Black",
+            "url": "10.jpg",
+            "color_circle_0": "#262627",
+            "color_circle_1": "#D2C49F"
+        },
+        {
+            "selected_title": "Olive Forest / TNF Black (NPF)",
+            "url": "11.jpg",
+            "color_circle_0": "#262527",
+            "color_circle_1": "#59562F"
+        }
+    ]
+}
