@@ -24,27 +24,8 @@
     <link rel="stylesheet" href="./assets/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    
-<meta http-equiv="Content-Security-Policy"
-      content="default-src 'self';
-               script-src 'self' 'unsafe-inline' 'unsafe-eval' https://static.hotjar.com https://script.hotjar.com;
-               connect-src 'self' https://*.hotjar.com https://*.hotjar.io;
-               img-src 'self' data: https://*.hotjar.com;
-               style-src 'self' 'unsafe-inline';">
 
-<!-- Hotjar Tracking Code for Site 6494720 -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:6494720,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta name="robots" content="noindex, nofollow">
     <script src="./assets/datehead.js?v=2"></script>
     <link rel="preload" href="./assets/s1.jpg" as="image">
@@ -356,9 +337,9 @@
     <link rel='stylesheet' id='contact-form-7-css'
         href='https://www.alpyrando.fr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4'
         type='text/css' media='all' />
-<!--     <link rel='stylesheet' id='cmplz-general-css'
+    <link rel='stylesheet' id='cmplz-general-css'
         href='https://www.alpyrando.fr/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=6.3.4'
-        type='text/css' media='all' /> -->
+        type='text/css' media='all' />
     <link rel='stylesheet' id='social_warfare-css'
         href='./assets/style.min.css'
         type='text/css' media='all' />
@@ -422,6 +403,19 @@
     <!-- scripts -->
     
     <script type="text/javascript" src="./assets//site.js"></script>
+
+    <script>
+function loadHotjar(){(function(h,o,t,j,a,r){
+  h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+  h._hjSettings={hjid:6494720,hjsv:6};
+  a=o.getElementsByTagName('head')[0];
+  r=o.createElement('script');r.async=1;
+  r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+  a.appendChild(r);
+})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');}
+function acceptConsent(){ localStorage.setItem('consent','1'); loadHotjar(); }
+if(localStorage.getItem('consent')==='1'){ loadHotjar(); }
+</script>
 
 </head>
 
@@ -1779,7 +1773,7 @@
 
 
 <!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
-<!-- <div id="cmplz-cookiebanner-container">
+<div id="cmplz-cookiebanner-container">
     <div class="cmplz-cookiebanner cmplz-hidden banner-1 optin cmplz-bottom-right cmplz-categories-type-view-preferences"
         aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optin"
         aria-describedby="cmplz-message-1-optin">
@@ -1948,7 +1942,7 @@
     </div>
 
 
-</div> -->
+</div>
 <div id="cmplz-manage-consent" data-nosnippet="true"><button
         class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Gérer le consentement</button>
 
@@ -1965,14 +1959,14 @@
 <script type='text/javascript'
     src='https://www.alpyrando.fr/wp-content/plugins/loftloader/assets/js/loftloader.min.js?ver=2022022501'
     id='loftloader-lite-front-main-js'></script>
-<!-- <script type='text/javascript' id='cmplz-cookiebanner-js-extra'>
+<script type='text/javascript' id='cmplz-cookiebanner-js-extra'>
     /* <![CDATA[ */
     var complianz = { "prefix": "cmplz_", "user_banner_id": "1", "set_cookies": [], "block_ajax_content": "0", "banner_version": "22", "version": "6.3.4", "store_consent": "", "do_not_track": "", "consenttype": "optin", "region": "eu", "geoip": "", "dismiss_timeout": "", "disable_cookiebanner": "", "soft_cookiewall": "", "dismiss_on_scroll": "", "cookie_expiry": "365", "url": "https:\/\/www.alpyrando.fr\/wp-json\/complianz\/v1\/", "locale": "lang=fr&locale=fr_FR", "set_cookies_on_root": "0", "cookie_domain": "", "current_policy_id": "15", "cookie_path": "\/", "categories": { "statistics": "statistiques", "marketing": "marketing" }, "tcf_active": "", "placeholdertext": "Cliquez pour accepter les cookies et activer ce contenu. Un rechargement de la page peut s'av\u00e9rer n\u00e9cessaire.", "css_file": "https:\/\/www.alpyrando.fr\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=22", "page_links": { "eu": { "cookie-statement": { "title": "Mentions l\u00e9gales", "url": "https:\/\/www.alpyrando.fr\/mentions\/" } } }, "tm_categories": "", "forceEnableStats": "", "preview": "", "clean_cookies": "" };
     /* ]]> */
-</script> -->
-<!-- <script defer type='text/javascript'
+</script>
+<script defer type='text/javascript'
     src='https://www.alpyrando.fr/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=6.3.4'
-    id='cmplz-cookiebanner-js'></script> -->
+    id='cmplz-cookiebanner-js'></script>
 
 <div class="swp-hidden-panel-wrap" style="display: none; visibility: collapse; opacity: 0">
     <div class="swp_social_panel swp_horizontal_panel swp_flat_fresh  swp_default_full_color swp_individual_full_color swp_other_full_color scale-100  scale-"
