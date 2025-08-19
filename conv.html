@@ -1,19 +1,41 @@
 <!doctype html>
-<html><head>
-  <meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17195010580"></script>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>ok</title>
+
+  <!-- Google tag (gtag.js) — НОВЫЙ AW ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17198813589"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-    gtag('config', 'AW-17195010580');
+    gtag('config', 'AW-17198813589');
   </script>
-</head><body>
+</head>
+<body>
 <script>
-(function(){
-  function qp(n){var m=new RegExp('[?&]'+n+'=([^&#]*)').exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g,' ')):''}
-  var value = parseFloat(qp('v')||'0')||0, currency = qp('cur')||'USD';
-  gtag('event','conversion',{ send_to:'AW-17195010580/REPLACE_WITH_LABEL', value:value, currency:currency });
-})();
+  (function(){
+    // читаем параметры из URL, которые преленд прокидывает в iframe
+    function qp(n){
+      var m = new RegExp('[?&]'+n+'=([^&#]*)').exec(location.search);
+      return m ? decodeURIComponent(m[1].replace(/\+/g,' ')) : '';
+    }
+    // по умолчанию — как прислал байер: 1.0 PLN
+    var value = parseFloat(qp('v'));
+    if (isNaN(value)) value = 1.0;
+    var currency = qp('cur') || 'PLN';
+    var tid = qp('tid') || qp('transaction_id') || '';
+
+    // Event snippet — НОВЫЙ send_to с твоим label
+    gtag('event', 'conversion', {
+      'send_to': 'AW-17198813589/jOcGCPWtsfsaEJWjhIlA',
+      'value': value,
+      'currency': currency,
+      'transaction_id': tid
+    });
+  })();
 </script>
-</body></html>
+</body>
+</html>
