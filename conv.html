@@ -1,42 +1,19 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="robots" content="noindex,nofollow">
-  <title>ok</title>
-
-  <!-- Global site tag (Google Ads) -->
+<html><head>
+  <meta charset="utf-8"><meta name="robots" content="noindex,nofollow">
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17195010580"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
-
-    // Базовая инициализация
     gtag('config', 'AW-17195010580');
   </script>
-</head>
-<body>
+</head><body>
 <script>
-  (function(){
-    // Получение параметров из URL
-    function qp(n){const m=new RegExp('[?&]'+n+'=([^&#]*)').exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g,' ')):''}
-
-    // Значения из ZEUS (можете передавать value/currency)
-    var value    = parseFloat(qp('v')||'0') || 0;
-    var currency = qp('cur') || 'USD';
-
-    // ВАЖНО: замените на ваш conversion label
-    var SEND_TO = 'AW-17195010580/REPLACE_WITH_LABEL';
-
-    // Вызов события конверсии.
-    // Если gclid/wbraid/gbraid есть в URL (мы их передадим), тег корректно атрибутирует конверсию.
-    gtag('event', 'conversion', {
-      send_to: SEND_TO,
-      value: value,
-      currency: currency
-    });
-  })();
+(function(){
+  function qp(n){var m=new RegExp('[?&]'+n+'=([^&#]*)').exec(location.search);return m?decodeURIComponent(m[1].replace(/\+/g,' ')):''}
+  var value = parseFloat(qp('v')||'0')||0, currency = qp('cur')||'USD';
+  gtag('event','conversion',{ send_to:'AW-17195010580/REPLACE_WITH_LABEL', value:value, currency:currency });
+})();
 </script>
-</body>
-</html>
+</body></html>
